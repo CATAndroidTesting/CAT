@@ -1,0 +1,35 @@
+{
+    "views": {
+        "other_view2": {
+            "resource_id": "com.forrestguice.suntimeswidget:id/dialog_title",
+            "class": "android.widget.TextView",
+            "text": "Location"
+        },
+        "target_view": {
+            "resource_id": "com.forrestguice.suntimeswidget:id/dialog_button_accept",
+            "class": "com.forrestguice.suntimeswidget:id/dialog_button_accept",
+            "text": "UPDATE"
+        },
+        "other_view1": {
+            "resource_id": "com.forrestguice.suntimeswidget:id/dialog_button_cancel",
+            "class": "android.widget.Button",
+            "text": "CANCEL"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "other_view1", "other_view2"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

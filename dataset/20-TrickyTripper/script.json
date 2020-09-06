@@ -1,0 +1,32 @@
+{
+    "views": {
+        "other_view2": {
+            "class": "android.widget.TextView",
+            "text": "Exchange Rates"
+        },
+        "other_view1": {
+            "resource_id": "de.koelle.christian.trickytripper:id/option_create_exchange_rate",
+            "class": "android.widget.TextView"
+        },
+        "target_view": {
+            "resource_id": "de.koelle.christian.trickytripper:id/option_import",
+            "class": "android.widget.TextView"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "other_view1", "other_view2"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

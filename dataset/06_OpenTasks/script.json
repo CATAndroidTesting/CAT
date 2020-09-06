@@ -1,0 +1,33 @@
+{
+    "views": {
+        "other_view2": {
+            "class": "android.widget.TextView",
+            "text": "Create"
+        },
+        "other_view1": {
+            "resource_id": "org.dmfs.tasks:id/task_list_name",
+            "class": "android.widget.TextView"
+        },
+        "target_view": {
+            "text": "SAVE",
+            "resource_id": "org.dmfs.tasks:id/editor_action_save",
+            "class": "android.widget.TextView"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "other_view1", "other_view2"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

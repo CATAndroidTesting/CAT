@@ -1,0 +1,32 @@
+{
+    "views": {
+        "other_view2": {
+            "resource_id": "android:id/action_bar",
+            "class": "android.view.ViewGroup"
+        },
+        "other_view1": {
+            "resource_id": "org.billthefarmer.diary:id/prevEntry",
+            "class": "android.widget.TextView"
+        },
+        "target_view": {
+            "resource_id": "org.billthefarmer.diary:id/cancel",
+            "class": "android.widget.TextView"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "other_view1", "other_view2"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

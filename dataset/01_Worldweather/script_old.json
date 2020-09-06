@@ -1,0 +1,58 @@
+{
+    "views": {
+        "target_view": {
+            "resource_id": ".*title",
+            "class": ".*TextView",
+            "text": "Personal API key"
+        },
+        "checkbox": {
+            "resource_id": ".*checkbox",
+            "class": ".*CheckBox"
+        },
+        "menu": {
+            "resource_id" : "com.haringeymobile.ukweather:id/mi_main_submenu",
+            "class": "android.widget.TextView"
+        },
+        "settings": {
+            "resource_id": "com.haringeymobile.ukweather:id/title",
+            "class": "android.widget.TextView",
+            "text": "Settings"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "checkbox"]
+        },
+        "home_state": {
+            "views": ["menu"]
+        },
+        "menu_state": {
+            "views": ["settings"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ],
+        "home_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "menu"
+            }
+        ],
+        "menu_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "settings"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"],
+        "home_state": ["home_operation"],
+        "menu_state": ["menu_operation"]
+    }
+}

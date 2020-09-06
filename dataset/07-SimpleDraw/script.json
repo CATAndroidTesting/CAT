@@ -1,0 +1,35 @@
+{
+    "views": {
+        "other_view2": {
+            "text": "Share",
+            "resource_id": "com.simplemobiletools.draw.pro:id/title",
+            "class": "android.widget.TextView"
+        },
+        "other_view1": {
+            "text": "About",
+            "resource_id": "com.simplemobiletools.draw.pro:id/title",
+            "class": "android.widget.TextView"
+        },
+        "target_view": {
+            "text": "Print",
+            "resource_id": "com.simplemobiletools.draw.pro:id/title",
+            "class": "android.widget.TextView"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "other_view1", "other_view2"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

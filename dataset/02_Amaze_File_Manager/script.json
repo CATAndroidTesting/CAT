@@ -1,0 +1,25 @@
+{
+    "views": {
+        "target_view": {
+            "resource_id": "com.amaze.filemanager.debug:id/title",
+            "class": "android.widget.TextView",
+            "text": "Compress"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

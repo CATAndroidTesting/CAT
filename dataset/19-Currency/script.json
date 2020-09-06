@@ -1,0 +1,35 @@
+{
+    "views": {
+        "other_view2": {
+            "resource_id": "android:id/summary",
+            "class": "android.widget.TextView",
+            "text": "Use dark theme"
+        },
+        "other_view1": {
+            "resource_id": "android:id/title",
+            "class": "android.widget.TextView",
+            "text": "Dark"
+        },
+        "target_view": {
+            "resource_id": "android:id/title",
+            "class": "android.widget.TextView",
+            "text": "About"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "other_view1", "other_view2"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "views": {
+        "target_view": {
+            "resource_id": "it.feio.android.omninotes:id/title",
+            "class": "android.widget.TextView",
+            "text": "Discard changes"
+        },
+        "other_view": {
+            "resource_id": "it.feio.android.omninotes:id/title",
+            "class": "android.widget.TextView",
+            "text": "Info"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "other_view"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

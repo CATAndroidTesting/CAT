@@ -1,0 +1,29 @@
+{
+    "views": {
+        "target_view": {
+            "resource_id": "com.knirirr.beecount:id/newprojSaveButton",
+            "class": "android.widget.Button",
+            "text": "SAVE PROJECT"
+        },
+        "new_project_title": {
+            "class": "android.widget.TextView",
+            "text": "New Project"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

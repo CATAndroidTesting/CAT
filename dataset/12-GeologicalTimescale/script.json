@@ -1,0 +1,35 @@
+{
+    "views": {
+        "other_view2": {
+            "resource_id": "android:id/title",
+            "class": "android.widget.TextView",
+            "text": "Search"
+        },
+        "other_view1": {
+            "resource_id": "android:id/title",
+            "class": "android.widget.TextView",
+            "text": "Fit to Screen"
+        },
+        "target_view": {
+            "resource_id": "android:id/title",
+            "class": "android.widget.TextView",
+            "text": "Language"
+        }
+    },
+    "states": {
+        "target_state": {
+            "views": ["target_view", "other_view1", "other_view2"]
+        }
+    },
+    "operations": {
+        "target_operation": [
+            {
+                "event_type": "touch",
+                "target_view": "target_view"
+            }
+        ]
+    },
+    "main": {
+        "target_state": ["target_operation"]
+    }
+}

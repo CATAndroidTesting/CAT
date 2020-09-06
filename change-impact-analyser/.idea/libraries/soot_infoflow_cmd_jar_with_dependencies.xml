@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="soot-infoflow-cmd-jar-with-dependencies">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Project/FlowDroid/soot-infoflow-cmd/target/soot-infoflow-cmd-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
