@@ -1,18 +1,18 @@
-# set up basic requirements for droidbot
+# set up basic requirements for cat based on droidbot
 from setuptools import setup, find_packages, findall
 import os
 
 setup(
-    name='droidbot',
+    name='catdroid',
     packages=find_packages(include=['droidbot', 'droidbot.adapter']),
     # this must be the same as the name above
     version='1.0.2b4',
     description='A lightweight UI-guided test input generator for Android.',
-    author='Yuanchun Li',
-    license='MIT',
-    author_email='pkulyc@gmail.com',
-    url='https://github.com/honeynet/droidbot',  # use the URL to the github repo
-    download_url='https://github.com/honeynet/droidbot/tarball/1.0.2b4',
+    author='Anonymous',
+    license='Apache 2.0, MIT',
+    author_email='cattestingdroid@gmail.com',
+    url='https://github.com/CATAndroidTesting/CAT',  # use the URL to the github repo
+    download_url='https://github.com/CATAndroidTesting/CAT',
     keywords=['testing', 'monkey', 'exerciser'],  # arbitrary keywords
     classifiers=[
         # How mature is this project? Common values are
@@ -34,7 +34,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'droidbot=droidbot.start:main',
+            'catdroid=droidbot.start:main',
         ],
     },
     package_data={
