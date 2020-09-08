@@ -17,7 +17,10 @@ We provide two ways to run the experiment: pre-configured environment in a Virtu
 
 ## Option 1. Running in the virtual machine (recommended)
 
-Virtual VM download links: via Google Drive: [Download](https://drive.google.com/file/d/14K7R1qwWSTJDzpj1NwRj1rMQGjwQ1a0T/view?usp=sharing)
+Virtual VM download links: 
+
+- [Google Drive](https://drive.google.com/file/d/14K7R1qwWSTJDzpj1NwRj1rMQGjwQ1a0T/view?usp=sharing)
+- [iCloud Drive](https://www.icloud.com/iclouddrive/0ia_t8cbPd7zFY5PBosCnDY3Q#CAT)
 
 The provided image can be run on VirtualBox 6.1.6 onwards as this version starts supporting nested virtualisation for running Android Emulator on both Intel and AMD CPUs.
 
